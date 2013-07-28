@@ -1,0 +1,164 @@
+
+html, body, .container, .main-row {
+  background: rgba(240,240,240,1);
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.spacer {
+  height: 10%;
+  float: left;
+  width: 100%;
+}
+
+.left-col {
+  height: 100%;
+  min-width: 550px;
+  max-width: 650px;
+  margin-left: 30px !important;
+}
+
+.right-col {
+  height: 100%;
+  overflow: auto;
+  min-width: 200px;
+  position: relative;
+}
+
+.box {
+  float: left;
+  background: white;
+  margin: 10px;
+  position: relative;
+
+  .box-title {
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    color: rgba(150,150,150,1);
+    text-align: center;
+    width: 100%;
+  }
+
+  &:hover {
+    .box-title { color: white; }
+  }
+}
+
+.large {
+  width: 99%;
+  margin-top: 10%;
+  height: 65%;
+  background-color: #009ECE;
+}
+
+.small {
+  width: 45%;
+  height: 200px;
+  min-width: 200px;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  &:hover {
+    //border: 2px solid LightSkyBlue;
+    background-color: rgba(180,180,180,1);
+  }
+}
+
+.medium {
+  height: 19%;
+  width: 99%;
+}
+
+.salmon {
+  background-color: #9CCF31;
+}
+
+.orange {
+  background-color: #F7D708;
+}
+
+.inner-container {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.pro-pic {
+  width: 200px;
+  height: auto;
+}
+
+.portfolio {
+  background-image: url('tuts-dark-72.png');
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  background-position: center;
+  &:hover {
+    background-image: url('tuts-light-72.png');
+  }
+}
+
+.resume {
+  background-image: url('docs-dark-72.png');
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  background-position: center;
+  &:hover {
+    background-image: url('docs-light-72.png');
+  }
+}
+
+.other {
+  background-image: url('tuts-dark-72.png');
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  background-position: center;
+  &:hover {
+    background-image: url('tuts-light-72.png');
+  }
+}
+
+.about {
+  background-image: url('community-dark-72.png');
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  background-position: center;
+  &:hover {
+    background-image: url('community-light-72.png');
+  }
+}
+
+.social-icons {
+  width: 70%;
+  padding: 0 15%;
+  margin-top: 4%;
+  height: 100px;
+  //background-color: red;
+  float: left;
+
+  .icon {
+    width: 25%;
+    height: 100%;
+    background-position: center;
+    //background-size: 50px 50px;
+    background-repeat: no-repeat;
+    float: left;
+
+  }
+
+  .fb { background-image: url('facebook-gray.png'); }
+  .fb:hover { background-image: url('facebook-color.png'); }
+  .tw { background-image: url('twitter-gray.png'); }
+  .tw:hover { background-image: url('twitter-color.png'); }
+  .li { background-image: url('linkedin-gray.png'); }
+  .li:hover { background-image: url('linkedin-color.png'); }
+  .gh { background-image: url('github-gray.png'); }
+  .gh:hover { background-image: url('github-color.png'); }
+
+}
