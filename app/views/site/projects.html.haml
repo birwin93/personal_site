@@ -1,4 +1,5 @@
 - @projects.each do |p|
-  .box.small
-    .box-title 
-      = p.name
+  =link_to project_path(p) do
+    .box.small
+      .box-title 
+        = p.name
