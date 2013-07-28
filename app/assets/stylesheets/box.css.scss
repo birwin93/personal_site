@@ -162,3 +162,9 @@ html, body, .container, .main-row {
   .gh:hover { background-image: url('github-color.png'); }
 
 }
+
+.back-btn {
+  color: white;
+  font-size: 20px;
+  &:hover { color: black; }
+}
