@@ -14,3 +14,52 @@
   color: rgba(230,230,230,1);
   line-height: 25px;
 }
+
+.inner-container {
+  height: 100%;
+  position: relative;
+}
+
+.nav-area {
+  height: 100%;
+  //border-left: 1px solid white;
+}
+
+.nav-box {
+  font-size: 20px;
+  height: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  &:hover {
+    border-left: 1px solid white;
+  }
+  .nav-title {
+    display: none;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    &:hover { text-decoration: none; }
+  }
+}
+
+.hero-row {
+  height: 100%;
+}
+
+.home-nav {
+  background-image: url('home-light.png');
+}
+.portfolio-nav {
+  background-image: url('address-light.png');
+}
+.blog-nav {
+  background-image: url('folder-light.png');
+}
+.life-nav {
+  background-image: url('notebook-light.png');
+}
+.work-nav {
+  background-image: url('incoming-light.png');
+}

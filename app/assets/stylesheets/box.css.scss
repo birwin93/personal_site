@@ -1,6 +1,6 @@
 
 html, body, .container, .main-row {
-  background: rgba(240,240,240,1);
+  background: rgba(230,230,230,1);
   height: 100%;
   position: relative;
 }
@@ -17,8 +17,8 @@ html, body, .container, .main-row {
 
 .left-col {
   height: 100%;
-  min-width: 550px;
-  max-width: 650px;
+  min-width: 350px;
+  max-width: 400px;
   margin-left: 30px !important;
 }
 
@@ -27,6 +27,7 @@ html, body, .container, .main-row {
   overflow: auto;
   min-width: 200px;
   position: relative;
+  padding-left: 20px;
 }
 
 .box {
@@ -57,23 +58,26 @@ html, body, .container, .main-row {
 }
 
 .small {
-  width: 45%;
-  height: 200px;
-  min-width: 200px;
-  opacity: 0;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s;
-  -o-transition: opacity 2s;
-  -moz-transition: opacity 2s;
+  width: 29%;
+  min-width: 180px;
+  max-width: 325px;
   &:hover {
     //border: 2px solid LightSkyBlue;
     background-color: rgba(180,180,180,1);
   }
 }
 
+.faded {
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+}
+
 .medium {
   padding: 20px;
-  width: 80%;
+  width: 85%;
 }
 
 .video-wrapper {
@@ -98,10 +102,6 @@ html, body, .container, .main-row {
   background-color: #F7D708;
 }
 
-.inner-container {
-  width: 90%;
-  margin-left: 5%;
-}
 
 .pro-pic {
   width: 200px;
@@ -160,7 +160,7 @@ html, body, .container, .main-row {
     width: 25%;
     height: 100%;
     background-position: center;
-    //background-size: 50px 50px;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
     float: left;
 
@@ -177,8 +177,16 @@ html, body, .container, .main-row {
 
 }
 
-.back-btn {
-  color: white;
-  font-size: 20px;
-  &:hover { color: black; }
+.art {
+  width: 100%;
+  height: 100%;
+}
+
+.light-box {
+  height: 10px;
+  width: 10px;
+  float: left;
+  &:hover {
+    background-color: black;
+  }
 }

@@ -1,12 +1,18 @@
 MySite::Application.routes.draw do
-  get "projects/show"
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   root 'site#home'
-  get "/projects" => "site#projects", as: "projects"
+  get "/projects" => "projects#index", as: "projects"
+  get "/profile" => "profiles#show", as: "profile"
+  get "/artwork" => "site#artwork"
 
   resources :projects, only: [:show]
+  resources :profiles, only: [:show]
+  resources :work_experiences, only: [:show, :index]
+  resources :life_experiences, only: [:show, :index]
+  resources :blog_posts, only: [:show, :index]
+  resources :freelance_jobs, only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

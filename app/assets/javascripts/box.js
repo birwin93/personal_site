@@ -2,11 +2,12 @@ var ready = function() {
   console.log('sdfsd');
   var fadeInBoxes = function() {
     console.log('fading');
-    $(".small").css('opacity', '1');
+    $(".faded").css('opacity', '1');
   };
 
   var resizeBoxes = function() {
-    $('.right-col').width($(window).width()-650);
+    $('.right-col').width($(window).width()-430);
+    $(".small").height($('.small').width());
   };
 
   fadeInBoxes();

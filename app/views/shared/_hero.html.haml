@@ -1,7 +1,4 @@
 .inner-container
-  .row
-    - unless request.url == root_url || session[:back] == nil
-      = link_to "Back", session[:back], class: "back-btn"
   .row 
     .hero-title 
       Billy Irwin
