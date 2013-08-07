@@ -1,6 +1,8 @@
 
+@import "bootstrap";
+
 html, body, .container, .main-row {
-  background: #F1F1F1 !important;
+  background: #E1E1E1 !important;
   height: 100%;
   position: relative;
   margin: 0;
@@ -60,6 +62,8 @@ html, body, .container, .main-row {
 }
 
 .small {
+  @include border-radius(5px);
+  //border: 1px solid #989898;
   width: 200px;
   height: 200px;
   &:hover {
