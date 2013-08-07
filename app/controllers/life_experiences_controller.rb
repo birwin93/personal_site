@@ -1,5 +1,4 @@
 class LifeExperiencesController < ApplicationController
-  layout "projects"
   def index
   end
 

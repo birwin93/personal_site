@@ -1,9 +1,11 @@
+@import "bootstrap";
+
 .hero-title {
   font-size: 35px;
   color: white;
   margin-top: 30px;
   width: 100%;
-  text-align: center;
+  margin-left: 30px;
 }
 
 .hero-slogan {
@@ -22,26 +24,36 @@
 
 .nav-area {
   height: 100%;
+  margin-left: 10px;
+  ul { margin: 40px 0 0 10px; padding:0; width: 100%;}
+  li { height: 70px; margin-bottom: 5px; }
   //border-left: 1px solid white;
 }
 
 .nav-box {
+  float: left;
   font-size: 20px;
-  height: 20%;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #E9E9E9;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  &:hover {
+  @include border-radius(30px);
+ /* &:hover {
     border-left: 1px solid white;
-  }
-  .nav-title {
-    display: none;
-    height: 100%;
-    line-height: 100%;
-    text-align: center;
-    color: white;
-    &:hover { text-decoration: none; }
-  }
+  } */
+}
+
+.nav-title {
+  float: left;
+  display: none;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+  &:hover { text-decoration: none; }
 }
 
 .hero-row {
@@ -53,6 +65,9 @@
 }
 .portfolio-nav {
   background-image: url('address-light.png');
+  &:hover {
+    background-image: url('address-blue.png');
+  }
 }
 .blog-nav {
   background-image: url('folder-light.png');

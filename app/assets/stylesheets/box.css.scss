@@ -1,8 +1,10 @@
 
 html, body, .container, .main-row {
-  background: rgba(230,230,230,1);
+  background: #F1F1F1 !important;
   height: 100%;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -53,14 +55,13 @@ html, body, .container, .main-row {
 .large {
   width: 99%;
   margin-top: 10%;
-  height: 65%;
-  background-color: #009ECE;
+  height: 300px;
+  background-color: #484848;
 }
 
 .small {
-  width: 29%;
-  min-width: 180px;
-  max-width: 325px;
+  width: 200px;
+  height: 200px;
   &:hover {
     //border: 2px solid LightSkyBlue;
     background-color: rgba(180,180,180,1);
@@ -149,18 +150,19 @@ html, body, .container, .main-row {
 }
 
 .social-icons {
-  width: 70%;
-  padding: 0 15%;
-  margin-top: 4%;
+  display: none;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 30px;
   height: 100px;
-  //background-color: red;
   float: left;
 
   .icon {
-    width: 25%;
-    height: 100%;
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
     background-position: center;
-    background-size: 50px 50px;
+    background-size: 40px 40px;
     background-repeat: no-repeat;
     float: left;
 
@@ -189,4 +191,10 @@ html, body, .container, .main-row {
   &:hover {
     background-color: black;
   }
+}
+
+.left-nav {
+  height: 100%;
+  width: 100%;
+  background-color: #484848;
 }

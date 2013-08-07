@@ -1,5 +1,4 @@
 class WorkExperiencesController < ApplicationController
-  layout "projects"
   def index
   end
 

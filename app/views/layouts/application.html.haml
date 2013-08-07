@@ -14,16 +14,16 @@
   = csrf_meta_tags
   = javascript_include_tag 'application'
 %body
-  .row-fluid.main-row
-    .span3.left-col
-      .box.large
-        = render 'shared/hero'
-      .social-icons
-        .icon.fb
-        .icon.tw
-        .icon.li
-        .icon.gh
-    .span9.right-col
-      .spacer
-      = yield
-      .spacer
+  .cell.tall
+    .content-wrapper
+      .content-col-300
+        .cell-section
+          = yield
+    .left-col-300
+      .left-nav
+        = render "shared/hero"
+        .social-icons
+          .icon.fb
+          .icon.tw
+          .icon.li
+          .icon.gh
