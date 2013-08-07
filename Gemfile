@@ -58,5 +58,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+gem "safe_yaml", "~> 0.9.5"
 gem "devise"
